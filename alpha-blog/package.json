@@ -1,5 +1,5 @@
 {
-  "name": "ruby_test_playground",
+  "name": "alpha_blog",
   "private": true,
   "dependencies": {
     "@rails/ujs": "^6.0.0-alpha",
