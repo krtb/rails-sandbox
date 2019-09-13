@@ -11,8 +11,14 @@
 # Setter Method: can use (mass assignment instead) = article = Article.new(title: this is my second article, description: this is my second description)
 # Setter Method: (Article.create(title: 'this is my third', description: 'this is my third description' )) ALSO inserts into DB
 class Article < ApplicationRecord
+    #ADD VALIDATIONS
+    validates :title, presence: true
 
 end
+
+#ERRORS
+# article.errors.any?
+# article.errors.messages
 
 #EDIT
 #article = Article.find(2)
