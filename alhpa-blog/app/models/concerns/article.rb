@@ -18,7 +18,7 @@ end
 
 #ERRORS
 # article.errors.any?
-# article.errors.messages
+# article.errors.full_messages
 
 #EDIT
 #article = Article.find(2)
