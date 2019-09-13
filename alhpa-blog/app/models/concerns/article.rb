@@ -13,7 +13,7 @@
 class Article < ApplicationRecord
     #ADD VALIDATIONS
     validates :title, presence: true
-
+    validates :description, presence: true
 end
 
 #ERRORS
