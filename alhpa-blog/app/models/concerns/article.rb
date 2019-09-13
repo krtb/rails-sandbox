@@ -12,7 +12,7 @@
 # Setter Method: (Article.create(title: 'this is my third', description: 'this is my third description' )) ALSO inserts into DB
 class Article < ApplicationRecord
     #ADD VALIDATIONS
-    validates :title, presence: true
+    validates :title, presence: true, length: { minimum: 3, maximum: 50 }
     validates :description, presence: true
 end
 
