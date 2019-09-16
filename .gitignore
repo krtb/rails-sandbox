@@ -1,3 +1,4 @@
+# add gitignore to repo before creating tmp folder. `git rm -rf tmp` TO REMOVE FROM GIT
 *.rbc
 capybara-*.html
 .rspec
