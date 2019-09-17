@@ -5,4 +5,7 @@ class WelcomeController < ApplicationController # inherits/subclasses from Appli
     def home
     end
 
+    def about
+    end
+
 end
