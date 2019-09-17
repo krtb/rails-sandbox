@@ -39,3 +39,4 @@ while attempts < 4
     attempts += 1
     end
 end
+puts "No more attempts left" if attempts == 4
