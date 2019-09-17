@@ -9,3 +9,4 @@ Basic blog demponstrating use of rails CRUD operations
    1) inherit from `ApplicationController`
 3) Add action/method, like `#home`
 4) Add View in `views`
+   1) add file as .html.erb
