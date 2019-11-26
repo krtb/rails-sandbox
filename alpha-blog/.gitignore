@@ -1,3 +1,6 @@
+# MY ADDITIONS
+.env
+
 *.rbc
 capybara-*.html
 .rspec
