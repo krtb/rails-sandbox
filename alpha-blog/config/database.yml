@@ -27,6 +27,6 @@ test:
 production:
   <<: *default
   #TODO: add PostgreSQL url here when deploying to PROD
-  database: db/production.sqlite3
+  database: 'alpha_blog_dev'
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
