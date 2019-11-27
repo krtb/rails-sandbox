@@ -12,7 +12,7 @@
     private
 
     def article_params
-    
+        params.require(:article)
     end
 
 
