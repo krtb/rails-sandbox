@@ -4,7 +4,8 @@
     end
 
     def edit
-    
+        # first find Article to edit, with :id
+         @article = Article.find(params[:id])
     end
 
     def create
@@ -16,6 +17,10 @@
         else
             render :new #render new view, to give user change to try again
         end
+    end
+
+    def update
+    
     end
 
     def show
