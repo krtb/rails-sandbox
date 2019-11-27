@@ -38,10 +38,11 @@
         @article = Article.find(params[:id])
     end
 
-    def delete
+    def destroy
         # find article based on :id found in params hash 
-        @article = article.find(params[:id])
-        flash[:message] = "Article was successfully deleted"
+        @article = Article.find(params[:id])
+        flash[:notice] = "Article was successfully deleted"
+        @article.destroy
         redirect_to articles_path
     end
 
