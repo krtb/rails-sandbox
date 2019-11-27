@@ -1,5 +1,5 @@
  class ArticlesController < ApplicationController
-    before_action :set_article
+    before_action :set_article, only: [:edit, :update, :show, :destroy]
 
     def index
         @articles = Article.all
@@ -48,6 +48,7 @@
 
     private
 
+    # runs at start, only inside of methods = :edit, :update, :show, :destroy
     def set_article
         # first find Article to edit, with :id
         @article = Article.find(params[:id])
