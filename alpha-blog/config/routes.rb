@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   # get path directed to welcome controller, home action
   root 'pages#home'
   get 'about', to: 'pages#about'
+  resources :articles
 end
