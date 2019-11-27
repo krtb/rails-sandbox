@@ -20,7 +20,13 @@
     end
 
     def update
-    
+        @article = Article.new(article_params)
+        if @article.save
+            flash[:notice] = "Article was successfully updated"
+            redirect_to article_path(@article) # redirect to Article show page, article GET /articles/:id article#show
+        else # if did not pass validations
+            render 'edit' #render EDIT template again, 2nd way to do this is with ('') instead of (:)
+        end
     end
 
     def show
