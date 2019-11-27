@@ -11,5 +11,9 @@
 
     private
 
+    def article_params
+    
+    end
+
 
  end
