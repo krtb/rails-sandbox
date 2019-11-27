@@ -38,6 +38,10 @@
         @article = Article.find(params[:id])
     end
 
+    def delete
+
+    end
+
     private
 
     def article_params
