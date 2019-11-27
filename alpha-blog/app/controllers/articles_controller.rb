@@ -1,4 +1,5 @@
  class ArticlesController < ApplicationController
+    before_action :set_article
 
     def index
         @articles = Article.all
@@ -9,8 +10,7 @@
     end
 
     def edit
-        # first find Article to edit, with :id
-         @article = Article.find(params[:id])
+        
     end
 
     def create
@@ -35,12 +35,12 @@
     end
 
     def show
-        @article = Article.find(params[:id])
+        
     end
 
     def destroy
         # find article based on :id found in params hash 
-        @article = Article.find(params[:id])
+        
         flash[:notice] = "Article was successfully deleted"
         @article.destroy
         redirect_to articles_path
@@ -49,7 +49,8 @@
     private
 
     def set_article
-        
+        # first find Article to edit, with :id
+        @article = Article.find(params[:id])
     end
 
     def article_params
