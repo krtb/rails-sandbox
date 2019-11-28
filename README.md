@@ -1,4 +1,4 @@
-# My Ruby Sandbox
+# My Rails Sandbox
 > A repo where I test, break, and resolve any new features or questions 
 > I may have dealing with the ruby language or 
 > the Rails framework.
