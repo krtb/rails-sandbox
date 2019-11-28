@@ -1,2 +1,10 @@
 @import './bootstrap_custom.scss';
+@import "~bootstrap/scss/bootstrap";
+$blue: #0e86b2;
+
+// NAVBAR
+.bg-light {
+    margin-bottom: 0;
+    background-color: $blue !important;
+}
 
