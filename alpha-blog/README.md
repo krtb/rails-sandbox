@@ -47,3 +47,6 @@ environment.plugins.append(
     })
 )
 ```
+* Foreman
+  * Command to start
+    * `foreman start -f Procfile.dev`
